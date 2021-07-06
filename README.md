@@ -25,3 +25,5 @@ CREATE TABLE [dbo].[Contact](
 ) ON [PRIMARY]
 GO
 4. Unzip the attached .rar file
+5. Change the sql connection in appsettings
+6. Open "nlog.config" with the new log path <target name="logfile" xsi:type="File" fileName="D:/Logs/${shortdate}_log.txt" layout="${longdate} ${level:uppercase=true} ${message}"/>
